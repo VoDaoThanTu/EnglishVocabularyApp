@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Từ tiếng Anh -->
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word"
+        android:textColor="#222222"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nghĩa tiếng Việt -->
+    <TextView
+        android:id="@+id/txtMeaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#555555"
+        android:textSize="24sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Nhóm nút điều khiển -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nút hiện nghĩa -->
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hiện nghĩa"
+            android:textAllCaps="false" />
+
+        <!-- Nút kế tiếp -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tiếp theo"
+            android:textAllCaps="false"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
 
 </LinearLayout>
